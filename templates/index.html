@@ -1,0 +1,119 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>AI-Powered Misinformation Detection Tool</title>
+    <link rel="stylesheet" href="/static/style.css">
+    <link href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.0.0/css/all.min.css" rel="stylesheet">
+</head>
+<body>
+    <div class="main-container">
+        <header class="app-header">
+            <h1 class="app-title">
+                <i class="fas fa-shield-alt"></i>
+                Misinformation Detection Tool
+            </h1>
+            <p class="app-subtitle">
+                AI-powered analysis to help you identify potentially misleading content
+            </p>
+        </header>
+        
+        <main>
+            <section class="input-section">
+                <h3><i class="fas fa-upload"></i> Submit Content for Analysis</h3>
+                <p>Upload text, images, or URLs to analyze for potential misinformation indicators.</p>
+                
+                <div class="upload-area">
+                    <div class="upload-icon">
+                        <i class="fas fa-cloud-upload-alt"></i>
+                    </div>
+                    <p>Drag and drop files here or click to browse</p>
+                    <p class="text-muted">Supported formats: Text, Images (JPG, PNG, GIF), URLs</p>
+                </div>
+            </section>
+            
+            <section class="analysis-results" style="display: none;">
+                <h3><i class="fas fa-chart-line"></i> Analysis Results</h3>
+                
+                <div class="risk-score-container risk-score-medium">
+                    <div class="risk-score-value">0.65</div>
+                    <div class="risk-score-label">Medium Risk</div>
+                </div>
+                
+                <div class="analysis-section">
+                    <h4><i class="fas fa-exclamation-triangle"></i> Misinformation Indicators</h4>
+                    
+                    <div class="indicator-item indicator-high">
+                        <div class="indicator-title">Emotional Language</div>
+                        <div class="indicator-description">
+                            The content contains highly emotional language designed to provoke strong reactions.
+                        </div>
+                    </div>
+                    
+                    <div class="indicator-item indicator-medium">
+                        <div class="indicator-title">Unverified Claims</div>
+                        <div class="indicator-description">
+                            Several claims in the content could not be verified against reliable sources.
+                        </div>
+                    </div>
+                </div>
+                
+                <div class="analysis-section">
+                    <h4><i class="fas fa-globe"></i> Source Information</h4>
+                    
+                    <div class="source-info source-questionable">
+                        <strong>Domain:</strong> example-news.com<br>
+                        <strong>Credibility:</strong> Questionable<br>
+                        <strong>Bias:</strong> Moderate political bias detected
+                    </div>
+                </div>
+            </section>
+            
+            <section class="education-panel">
+                <h3><i class="fas fa-graduation-cap"></i> Learn More</h3>
+                <p>Improve your ability to identify misinformation with these educational resources:</p>
+                
+                <div class="education-module">
+                    <div class="module-title">Understanding Misinformation</div>
+                    <div class="module-description">
+                        Learn the basics of identifying different types of misinformation and propaganda techniques.
+                    </div>
+                    <div class="progress-container">
+                        <div class="progress-bar" style="width: 60%;"></div>
+                    </div>
+                </div>
+                
+                <div class="education-module">
+                    <div class="module-title">Evaluating Sources</div>
+                    <div class="module-description">
+                        Discover how to assess the credibility and reliability of information sources.
+                    </div>
+                    <div class="progress-container">
+                        <div class="progress-bar" style="width: 30%;"></div>
+                    </div>
+                </div>
+            </section>
+        </main>
+        
+        <footer style="text-align: center; margin-top: 3rem; padding: 2rem; color: #6c757d;">
+            <p>&copy; 2024 AI-Powered Misinformation Detection Tool. Built with ❤️ for digital literacy.</p>
+        </footer>
+    </div>
+    
+    <script>
+        // Simple JavaScript for demo purposes
+        document.addEventListener('DOMContentLoaded', function() {
+            console.log('Misinformation Detection Tool loaded');
+            
+            // Add click handlers for interactive elements
+            const uploadArea = document.querySelector('.upload-area');
+            if (uploadArea) {
+                uploadArea.addEventListener('click', function() {
+                    console.log('Upload area clicked');
+                });
+            }
+        });
+    </script>
+</body>
+</html>
